@@ -39,6 +39,8 @@ import static java.awt.event.InputEvent.ALT_DOWN_MASK;
  */
 public class PingPongGreenTable extends JPanel {
 
+	private static final long serialVersionUID = 1L;
+
 	private JLabel label;
 	private PingPongGameEngine gameEngine;
 
@@ -255,7 +257,7 @@ public class PingPongGreenTable extends JPanel {
 	public static void main(String[] args) {
 
 		// Create an instance of the frame
-		JFrame f = new JFrame("Ping Pong Green Table");
+		JFrame f = new JFrame("Ping Pong");
 
 		// Ensure that the window can be closed 
 		// by pressing a little cross in the corner
@@ -268,7 +270,7 @@ public class PingPongGreenTable extends JPanel {
 		table.loadProperties(GameConstants.PROPERTIES_FILE);
 
 		// Set the frame's size and make it visible
-		f.setBounds(0,0,GameConstants.TABLE_WIDTH+5, GameConstants.TABLE_HEIGHT+60);
+		f.setBounds(0,0,GameConstants.TABLE_WIDTH+16, GameConstants.TABLE_HEIGHT+80);
 		f.setVisible(true);
 	}
 }
